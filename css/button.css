@@ -1,0 +1,24 @@
+.icon-add-button {
+  width: calc(var(--spacing-large) * 2);
+  line-height: 2;
+  font-size: 24px;
+  border: 0;
+  border-radius: var(--spacing-xsmall);
+  color: var(--color-interface-light);
+  background-color: var(--color-brand-secondary);
+  cursor: pointer;
+}
+
+.icon-action-button {
+  border: 0;
+  font-size: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.edit {
+  color: var(--color-text-dark);
+}
+.delete {
+  color: var(--color-text-dark);
+}

@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 { 
+  font-family: 'Open Sans';
+  font-weight: normal;
+}
+
+.heading {
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.title {
+  letter-spacing: -0.1rem;
+  font-weight: 400;
+  color: var(--color-text-light);
+}
+
+.subtitle {
+  font-weight: 700;
+  color: var(--color-brand-primary);
+}
+
+.body {
+  font-weight: 500;
+}
+
