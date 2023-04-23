@@ -64,7 +64,6 @@ header {
   border: 10px;
   background-color: transparent;
   cursor: pointer; 
-  
 }
 
 .edit-del{
@@ -85,8 +84,9 @@ color: var(--color-interface-dark)
 .title {
   line-height: 1.5;
   letter-spacing: -1px;
-  font-weight: 300;
+  font-weight: 600;
   color: var(--color-text-light);
+  font-weight: 
 }
 
 .tarefas{
@@ -132,16 +132,27 @@ color: var(--color-interface-dark)
   font-weight: bold;
   color:var(--color-text-dark)
 
-
-
-
 }
 
 .form-task-input {
 
+width: 200px;
+height: 35px;
+border-radius: 5px;
+border-color: var(--color-text-light);
+
+
+
 }
 
 .form-task-button {
+
+  border-radius: 3px;
+  background-color: var(--color-brand-secondary);
+  color: white;
+  width: 65px;
+  height: 38px;
+
 
 
 
