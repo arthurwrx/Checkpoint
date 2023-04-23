@@ -61,9 +61,21 @@ header {
 } */
 
 .button {
-  border: 0;
+  border: 10px;
   background-color: transparent;
-  cursor: pointer;
+  cursor: pointer; 
+}
+
+.edit-del{
+
+  border: 10px;
+  background-color: transparent;
+  cursor: pointer; 
+  
+  
+  
+
+
 }
 
 .title {
@@ -71,6 +83,15 @@ header {
   letter-spacing: -1px;
   font-weight: 300;
   color: var(--color-text-light);
+}
+
+.tarefas{
+  display: flex;
+  padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  
 }
 
 .subtitle {
