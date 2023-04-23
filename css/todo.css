@@ -64,6 +64,7 @@ header {
   border: 10px;
   background-color: transparent;
   cursor: pointer; 
+  
 }
 
 .edit-del{
@@ -71,9 +72,12 @@ header {
   border: 10px;
   background-color: transparent;
   cursor: pointer; 
-  
-  
-  
+
+}
+.edit-del{
+
+padding-inline-start: 172px;
+color: var(--color-interface-dark)
 
 
 }
@@ -87,12 +91,18 @@ header {
 
 .tarefas{
   display: flex;
-  padding-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
-
   
 }
+
+.legendas{
+
+  padding-left: 10px;
+  font-size: 16px;
+
+}
+
 
 .subtitle {
   line-height: 1.2;
@@ -118,6 +128,13 @@ header {
 
 .form-task-label {
 
+  font-weight: 600;
+  font-weight: bold;
+  color:var(--color-text-dark)
+
+
+
+
 }
 
 .form-task-input {
@@ -125,6 +142,8 @@ header {
 }
 
 .form-task-button {
-  
+
+
+
 }
 
