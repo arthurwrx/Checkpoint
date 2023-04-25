@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 :root {
@@ -71,12 +72,8 @@ header {
   border: 10px;
   background-color: transparent;
   cursor: pointer; 
-
-}
-.edit-del{
-
-padding-inline-start: 172px;
-color: var(--color-interface-dark)
+  color: var(--color-interface-dark);
+ 
 
 
 }
@@ -86,19 +83,26 @@ color: var(--color-interface-dark)
   letter-spacing: -1px;
   font-weight: 600;
   color: var(--color-text-light);
-  font-weight: 
 }
 
 .tarefas{
-  display: flex;
+  margin-top: 15px;
   margin-left: 10px;
   margin-right: 10px;
+
+
+
+}
+
+.tarefas-escolhidas{
+  display: flex;
+  width: 100vw;
+
   
 }
 
 .legendas{
 
-  padding-left: 10px;
   font-size: 16px;
 
 }
