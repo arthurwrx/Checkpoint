@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
 :root {
   --color-brand-primary: #1d99ff;
   --color-brand-secondary: #ff455b;
@@ -28,7 +27,6 @@
   --spacing-medium: 24px;
   --spacing-large: 32px;
   --spacing-xlarge: 40px;
-
 }
 
 body {
@@ -55,10 +53,6 @@ header {
   display: flex;
   justify-content: space-between;
 }
-/* header > div.container {
-  display: flex;
-  justify-content: space-between;
-} */
 
 .button {
   border: 10px;
@@ -67,18 +61,10 @@ header {
 }
 
 .edit-del{
-
   border: 10px;
   background-color: transparent;
   cursor: pointer; 
-
-}
-.edit-del{
-
-padding-inline-start: 172px;
-color: var(--color-interface-dark)
-
-
+  color: var(--color-interface-dark);
 }
 
 .title {
@@ -86,23 +72,31 @@ color: var(--color-interface-dark)
   letter-spacing: -1px;
   font-weight: 600;
   color: var(--color-text-light);
-  font-weight: 
 }
 
 .tarefas{
   display: flex;
   margin-left: 10px;
   margin-right: 10px;
-  
+  justify-content: space-between;
+}
+
+.tarefas-master{
+  margin-top: 15px;
+  border-top: 1px solid;
+  border-top-right-radius: 25px;
+  border-color: var(--color-text-light);
 }
 
 .legendas{
-
-  padding-left: 10px;
   font-size: 16px;
-
 }
 
+#caixinha{
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+}
 
 .subtitle {
   line-height: 1.2;
