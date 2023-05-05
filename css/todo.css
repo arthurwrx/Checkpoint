@@ -60,10 +60,19 @@ header {
   cursor: pointer; 
 }
 
-.edit-del{
+.edit{
   border: 10px;
   background-color: transparent;
   cursor: pointer; 
+  color: var(--color-interface-dark);
+  margin-left: auto;
+  padding-right: 15px;
+}
+
+.del{
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
   color: var(--color-interface-dark);
 }
 
@@ -78,7 +87,7 @@ header {
   display: flex;
   margin-left: 10px;
   margin-right: 10px;
-  justify-content: space-between;
+
 }
 
 .tarefas-master{
@@ -86,10 +95,13 @@ header {
   border-top: 1px solid;
   border-top-right-radius: 25px;
   border-color: var(--color-text-light);
+  padding-bottom: 100vh;
+  background-color:var(--color-common-light)
 }
 
 .legendas{
   font-size: 16px;
+  margin-left: auto;
 }
 
 #caixinha{
@@ -121,34 +133,23 @@ header {
 }
 
 .form-task-label {
-
   font-weight: 600;
   font-weight: bold;
   color:var(--color-text-dark)
-
 }
 
 .form-task-input {
-
 width: 200px;
 height: 35px;
 border-radius: 5px;
 border-color: var(--color-text-light);
-
-
-
 }
 
 .form-task-button {
-
   border-radius: 3px;
   background-color: var(--color-brand-secondary);
   color: white;
   width: 65px;
   height: 38px;
-
-
-
-
 }
 
