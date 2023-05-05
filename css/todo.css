@@ -67,6 +67,8 @@ header {
   color: var(--color-interface-dark);
   margin-left: auto;
   padding-right: 15px;
+  font-family: "Open Sans";
+  font-weight: 300;
 }
 
 .del{
@@ -87,13 +89,14 @@ header {
   display: flex;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: var(--spacing-medium);
 
 }
 
 .tarefas-master{
-  margin-top: 15px;
+  margin-top: var(--spacing-default);
   border-top: 1px solid;
-  border-top-right-radius: 25px;
+  border-top-right-radius: var(--spacing-medium);
   border-color: var(--color-text-light);
   padding-bottom: 100vh;
   background-color:var(--color-common-light)
@@ -101,13 +104,17 @@ header {
 
 .legendas{
   font-size: 16px;
-  margin-left: auto;
+  margin-left: var(--spacing-default);
+}
+.legendas:hover {
+
+  text-decoration: line-through;
 }
 
 #caixinha{
   width: 15px;
   height: 15px;
-  margin-top: 5px;
+  margin-top: var(--spacing-xsmall)
 }
 
 .subtitle {
@@ -140,7 +147,7 @@ header {
 
 .form-task-input {
 width: 200px;
-height: 35px;
+height: 40px;
 border-radius: 5px;
 border-color: var(--color-text-light);
 }
@@ -148,8 +155,17 @@ border-color: var(--color-text-light);
 .form-task-button {
   border-radius: 3px;
   background-color: var(--color-brand-secondary);
-  color: white;
+  color: var(--color-interface-light);
   width: 65px;
   height: 38px;
 }
 
+@media (min-width: 300px) {  
+  .tarefas{
+
+    margin-left: var(--spacing-medium);
+
+  }
+
+
+}
