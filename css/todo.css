@@ -54,67 +54,11 @@ header {
   justify-content: space-between;
 }
 
-.button {
-  border: 10px;
-  background-color: transparent;
-  cursor: pointer; 
-}
-
-.edit{
-  border: 10px;
-  background-color: transparent;
-  cursor: pointer; 
-  color: var(--color-interface-dark);
-  margin-left: auto;
-  padding-right: 15px;
-  font-family: "Open Sans";
-  font-weight: 300;
-}
-
-.del{
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  color: var(--color-interface-dark);
-}
-
 .title {
   line-height: 1.5;
   letter-spacing: -1px;
   font-weight: 600;
   color: var(--color-text-light);
-}
-
-.tarefas{
-  display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: var(--spacing-medium);
-
-}
-
-.tarefas-master{
-  margin-top: var(--spacing-default);
-  border-top: 1px solid;
-  border-top-right-radius: var(--spacing-medium);
-  border-color: var(--color-text-light);
-  padding-bottom: 100vh;
-  background-color:var(--color-common-light)
-}
-
-.legendas{
-  font-size: 16px;
-  margin-left: var(--spacing-default);
-}
-.legendas:hover {
-
-  text-decoration: line-through;
-}
-
-#caixinha{
-  width: 15px;
-  height: 15px;
-  margin-top: var(--spacing-xsmall)
 }
 
 .subtitle {
@@ -133,6 +77,65 @@ header {
   width: 35px;
   height: 35px;
   border-radius: 50%;
+}
+
+.button {
+  border: 10px;
+  background-color: transparent;
+  cursor: pointer; 
+}
+
+.tarefas-master{
+  margin-top: var(--spacing-default);
+  border-top: 1px solid;
+  border-top-right-radius: var(--spacing-medium);
+  border-color: var(--color-text-light);
+  padding-bottom: 100vh;
+  background-color:var(--color-common-light);
+
+}
+.tarefas{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: var(--spacing-medium);
+  display: flex;
+}
+
+
+.edit{
+  border: 10px;
+  background-color: transparent;
+  cursor: pointer; 
+  color: var(--color-interface-dark);
+  
+  padding-right: 15px;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.del{
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--color-interface-dark);
+}
+
+.legendas{
+  font-size: 16px;
+  align-items: center;
+  margin-right: auto;
+  padding-left: var(--spacing-medium)
+}
+
+.legendas:hover {
+  text-decoration: line-through;
+}
+
+#caixinha{
+  width: 15px;
+  height: 15px;
+  margin-top: var(--spacing-xsmall);
+  margin-left: auto;
 }
 
 .form-task {
@@ -161,11 +164,28 @@ border-color: var(--color-text-light);
 }
 
 @media (min-width: 300px) {  
-  .tarefas{
+}
 
-    margin-left: var(--spacing-medium);
+/* Extra small devices (phones, 600px and down) */
 
-  }
+@media(max-width: 600px){
 
+#caixinha{
 
 }
+.legendas{
+
+}
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {...}
+
+ /* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {...}
+
+ /* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {...}
+
+• /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {...}
