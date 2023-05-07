@@ -119,28 +119,24 @@ header {
   color: var(--color-interface-dark);
 }
 
-.legendas{
+.descricao-tarefas{
   font-size: 16px;
   align-items: center;
   margin-right: auto;
-  padding-left: var(--spacing-medium)
+  padding-left: var(--spacing-medium);
 }
 
-.legendas:hover {
-  
-}
 
 #caixinha{
   width: 15px;
   height: 15px;
   margin-top: var(--spacing-xsmall);
   margin-left: 20px;
-  
-}
-#caixinha:checked ~ .legendas{
   accent-color: var(--color-text-dark);
-  text-decoration: line-through;
 
+}
+#caixinha:checked ~ .descricao-tarefas{
+  text-decoration: line-through;
 }
 
 .form-task {
@@ -174,25 +170,162 @@ border-color: var(--color-text-light);
   width: 94%;
   margin-left: auto;
   margin-right: auto;
+  background-color: transparent;
 }
 
-/* Extra small devices (phones, 600px and down) */
+@media(max-width: 480px){
 
-@media(max-width: 600px){
+  .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .subtitle {
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: var(--spacing-medium);
+    color: var(--color-brand-primary);
+  }
+
+  .form-task-button {
+    border-radius: 3px;
+    background-color: var(--color-brand-secondary);
+    color: var(--color-interface-light);
+    width: 65px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  #caixinha{
+    width: var(--spacing-default);
+    height: var(--spacing-default);
+    margin-left: 0;
+  }
+
+  .descricao-tarefas{
+    align-items: center;
+    margin-right: auto;
+    padding-left: var(--spacing-medium)
+  }
 
 }
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
-@media (max-width: 480px) 
+@media(min-width: 768px){
+
+  .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  
+  #menu{
+    font-size: var(--spacing-large);
+  }
+  
+  .subtitle {
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: var(--spacing-medium);
+    color: var(--color-brand-primary);
+  }
+  
+  .form-task-button {
+    border-radius: 3px;
+    background-color: var(--color-brand-secondary);
+    color: var(--color-interface-light);
+    width: 65px;
+    height: 40px;
+    margin-left: 10px;
+  }
+}
+#caixinha{
+  width: var(--spacing-default);
+  height: var(--spacing-default);
+  margin-left: 24px;
+}
+
+.descricao-tarefas{
+  font-size: var(--spacing-default);
+  align-items: center;
+  margin-right: auto;
+  padding-left: var(--spacing-medium)
+}
+
+.edit-del{
+ margin-right: var(--spacing-medium);
+}
+  
+@media(min-width: 2560px){
+
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  
+  #menu{
+    font-size: var(--spacing-xlarge);
+  }
+  
+  .subtitle {
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: var(--spacing-large);
+    color: var(--color-brand-primary);
+  }
+  
+  .form-task-button {
+    border-radius: 3px;
+    background-color: var(--color-brand-secondary);
+    color: var(--color-interface-light);
+    width: 130px;
+    height: 50px;
+    margin-left: 10px;
+  }
+
+#caixinha{
+  width: var(--spacing-large);
+  height: var(--spacing-large);
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+.descricao-tarefas{
+  font-size: var(--spacing-large);
+  align-items: center;
+  margin-right: auto;
+  padding-left: var(--spacing-medium)
+}
+
+.edit-del{
+ margin-right: 80px;
+
+}
+
+#edit-del{
+  font-size: var(--spacing-xlarge)
+}
+
+.form-task-label {
+  font-weight: 600;
+  font-weight: bold;
+  font-size: var(--spacing-large);
+  color:var(--color-text-dark)
+}
+.title {
+  line-height: 1.5;
+  letter-spacing: -1px;
+  font-weight: 600;
+  color: var(--color-text-light);
+  font-size: var(--spacing-large);
+}
+
+.form-task-input {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  border-color: var(--color-text-light);
+  }
 
 
-
-
- /* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) 
-
- /* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) 
-
-• /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (min-width: 1200px) 
+}
